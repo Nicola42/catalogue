@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Début de l'entête */
+
+
+
+
+/*  FIN DU MENU  */
+
+/*  Fin Entête */
+
+body > main > div {
+    background-image: url("https://www.onlineformapro.com/wp-content/uploads/2018/07/bg_header_catalogue.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 600px;
+}
+
+body > main > div > div{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 480px;
+    top: 100px;
+}
+
+body > main > div > div img{
+    margin: 0 150px;
+}
+
+body > main > div > div h1, h2{
+    color: white;
+    text-align: center;
+}
+
+body > main > div > div h1{
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+body > main > div > div h2{
+    font-size: 17px;
+    font-family: Open, sans-serif;
+    margin-top: 40px;
+    line-height: 30px;
+}
+
+
+body > main > section > header{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+body > main > section > header h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
+    line-height: 130px;
+}
+
+
+body > main > section > header p{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    color: #a3a3a3;
+}
+
+
+
+body > main > section > div{
+    height: 1200px;
+    width: 1200px;
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body > main > section > div article{
+    background-color: rgba(236, 233, 233, 0.719);
+    width: 350px;
+    margin-top: 50px;
+    margin-left: 30px;
+    height: auto;
+}
+
+body > main > section > div article img{
+    margin: 25px 0 0 120px;
+}
+
+body > main > section > div > article h2{
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+body > main > section > div > article p{
+    color: #a3a3a3;
+    text-align: center;
+    margin: 10px;
+    min-height: 70px;
+}
+
+body > main > section > div > article a{
+    display: block;
+    color: #ca2548;
+    box-sizing: border-box;
+    border: 2px solid #ca2548;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    margin: 30px 0 20px 50px;
+    width: 250px;
+}
+
+body > main > section > div > article a:hover{
+    border: 2px solid #ca2548;
+    color: #fff;
+    background-color: #ca2548;
+}
+
+
+
+@media screen and (min-width: 900px){
+    body > header{
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    
+    /* Logo Online */
+    
+    body > header > div > a{
+        display: block;
+    }
+    
+    
+    body > header > div > a > img{
+        width: 157px;
+        height: 66px;
+    }
+    
+    /* Fin Logo Online */
+    /*  Début Menu  */
+    
+    
+    body > header > nav > ul li{
+        position: relative;
+    }
+    
+    /*  Sous-Menu  */
+    
+    body > header > nav > ul > li > ul{
+        background-color: #ffffff;
+        position: absolute;
+        display: none;
+        z-index: 9999;
+        box-sizing: border-box;
+        padding: 0 10px;
+        border-top: 2px solid #d01242;
+        
+    }
+    
+    body > header > nav > ul li:hover > ul{
+        display: block;
+    }
+    
+    body > header > nav > ul > li > ul li > a{
+            font-size: 13px;
+            font-weight: 600;
+            width: 150px;
+            line-height: 50px;
+            border-bottom: 1px solid #a3a3a3;
+            padding: 5px 0;
+    }
+    
+    
+    
+    body > header > nav > ul li:hover > ul > li{
+        line-height: 100px;
+    }
+    
+    
+    /*  Fin Sous-Menu  */
+    
+    
+    body > header > nav li{
+        list-style-type: none;
+        float: left;    
+    }
+    
+    body > header > nav ul > li > a{
+        display: block;
+        /* width: 100px; */
+        /* height: 83px; */
+        /* text-align: center; */
+        /* font-size: 16px; */
+        padding: 0 15px;
+        text-decoration: none;
+        color: #000000;
+        line-height: 83px;
+        font-weight: 600;
+    }
+    
+    /*  Survol de souris  */
+    
+    a:hover {
+        color: #d01242;
+    }
+    
+    /*  Contact avec bord arrondi  */
+    
+    body > header > nav > ul > li:last-child{
+        height: 40px;
+        background-color:#d01242;
+        color: white;
+        border-radius: 25%;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    
+    body > header > nav > ul > li:last-child > a{
+        line-height: 40px;
+    }
+    
+    /*  Survol de souris sur Contact */
+    
+    body > header > nav > ul > li:last-child:hover {
+        background-color:white;
+        border: solid #d01242;
+        color: #d01242;
+    }
+}
+
+
+@media screen and (max-width: 899px){
+    body > header{
+        display: block;
+        position: relative;
+        width: 800px;
+        margin: 0 auto;
+        /* justify-content: space-evenly; */
+    }
+
+    body > header > div > a{
+        display: block;
+    }
+    
+    
+    body > header > div > a > img{
+        position: relative;
+        width: 300px;
+        height: 150px;
+        left: 300px;
+    }
+
+    body > header > nav{
+        display: block;
+        height: 150px;
+    }
+
+
+    body > header > nav > ul li{
+        position: relative;
+        display: block;
+    }
+    
+    /*  Sous-Menu  */
+    
+    body > header > nav > ul > li > ul{
+        background-color: #ffffff;
+        position: absolute;
+        display: none;
+        z-index: 9999;
+        box-sizing: border-box;
+        padding: 0 5px;
+        border-top: 2px solid #d01242;
+        
+    }
+    
+    body > header > nav > ul li:hover > ul{
+        display: block;
+    }
+    
+    body > header > nav > ul > li > ul li > a{
+            font-size: 13px;
+            font-weight: 600;
+            width: 150px;
+            line-height: 50px;
+            border-bottom: 1px solid #a3a3a3;
+            padding: 5px 0;
+    }
+    
+    
+    
+    body > header > nav > ul li:hover > ul > li{
+        line-height: 100px;
+    }
+    
+    
+    /*  Fin Sous-Menu  */
+    
+    
+    body > header > nav li{
+        list-style-type: none;
+        float: left;    
+    }
+    
+    body > header > nav ul > li > a{
+        display: block;
+        /* width: 100px; */
+        /* height: 83px; */
+        /* text-align: center; */
+        /* font-size: 16px; */
+        padding: 0 10px;
+        text-decoration: none;
+        color: #000000;
+        line-height: 83px;
+        font-weight: 600;
+        /* margin: 5px 5px; */
+    }
+    
+    /*  Survol de souris  */
+    
+    a:hover {
+        color: #d01242;
+    }
+    
+    /*  Contact avec bord arrondi  */
+    
+    body > header > nav > ul > li:last-child{
+        height: 40px;
+        background-color:#d01242;
+        color: white;
+        border-radius: 25%;
+        margin-top: 25px;
+        margin-left: 5px;
+    }
+    
+    body > header > nav > ul > li:last-child > a{
+        line-height: 30px;
+    }
+    
+    /*  Survol de souris sur Contact */
+    
+    body > header > nav > ul > li:last-child:hover {
+        background-color:white;
+        border: solid #d01242;
+        color: #d01242;
+    }
+}
